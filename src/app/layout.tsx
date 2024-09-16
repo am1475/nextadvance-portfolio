@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import { ReactNode } from "react";
 
 // Load fonts locally
@@ -26,9 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className="dark">
       <body className={geistSans.variable}> {/* Using geistSans */}
-        <div className="relative w-full flex justify-center">
-          <Navbar />
-        </div>
+        
         {children}
       </body>
     </html>
