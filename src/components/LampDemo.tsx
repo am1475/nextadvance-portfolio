@@ -1,92 +1,70 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
-import { LampContainer } from "../components/ui/lamp";
-import { FaGithub, FaLinkedin, FaHackerrank } from "react-icons/fa";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import Image from 'next/image';
-
-// Custom LeetCode Icon
-const LeetcodeIcon = () => (
-  <Image
-    src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
-    alt="LeetCode Logo"
-    width={48}
-    height={48}
-  />
-);
-
-
 
 export function LampDemo() {
   return (
     <BackgroundBeamsWithCollision>
-    <LampContainer>
-      {/* Lamp Effect Section */}
-      <motion.h1
-        initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-      >
-        Contact <br /> Me
-      </motion.h1>
+      <div className="flex flex-col items-center mt-24 mb-40 px-4 sm:px-6 lg:px-8">
+        {/* Title Section */}
+        <h1 className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-3xl sm:text-4xl md:text-7xl font-medium tracking-tight text-transparent">
+          Contact Me
+        </h1>
 
-      {/* Social Media Links Section */}
-      <div className="mt-12 flex justify-center space-x-6">
-        {/* GitHub */}
-        <motion.a
-          href="https://github.com/your-github-handle"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="text-4xl md:text-5xl text-gray-800 dark:text-white"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </motion.a>
+        <p className="text-xl sm:text-2xl md:text-4xl lg:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8 text-center mt-10 sm:mt-20 md:mt-16">
+          Get in touch
+        </p>
 
-        {/* LinkedIn */}
-        <motion.a
-          href="https://www.linkedin.com/in/your-linkedin-handle"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="text-4xl md:text-5xl text-blue-700 dark:text-blue-300"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </motion.a>
+        {/* Contact Form Section */}
+        <div className="mt-8 sm:mt-12 w-full max-w-lg bg-gray-900 p-6 sm:p-8 rounded-lg shadow-md mx-auto relative">
+          <form className="space-y-4 sm:space-y-6">
+            <div>
+              <label className="block text-gray-300 text-sm font-bold mb-2" htmlFor="name">
+                Name
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="name"
+                type="text"
+                placeholder="Your Name"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-300 text-sm font-bold mb-2" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="Your Email"
+              />
+            </div>
+            <div>
+              <label className="block text-gray-300 text-sm font-bold mb-2" htmlFor="message">
+                Message
+              </label>
+              <textarea
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="message"
+                placeholder="Your Message"
+                rows={4}
+              ></textarea>
+            </div>
+            <div className="flex items-center justify-center">
+              <button
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
 
-        {/* LeetCode */}
-        <motion.a
-          href="https://leetcode.com/your-leetcode-handle"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="text-4xl md:text-5xl text-orange-500 dark:text-orange-400"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LeetcodeIcon />
-        </motion.a>
-
-        {/* HackerRank */}
-        <motion.a
-          href="https://www.hackerrank.com/your-hackerrank-handle"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="text-4xl md:text-5xl text-green-600 dark:text-green-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaHackerrank />
-        </motion.a>
+        {/* Add extra space at the bottom */}
+        <div className="pb-32 sm:pb-40 lg:pb-48"></div> {/* Increased padding-bottom for larger spacing */}
       </div>
-    </LampContainer>
     </BackgroundBeamsWithCollision>
   );
 }

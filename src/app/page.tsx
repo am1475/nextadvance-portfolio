@@ -13,6 +13,8 @@ import { LampDemo } from "@/components/LampDemo";
 import Footer from "@/components/Footer";
 
 
+
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black/[0.96] bg-grid-white bg-opacity-[0.02] antialiased">
@@ -21,10 +23,11 @@ export default function Home() {
       <TracingBeamDemo />
       <StickyScrollRevealDemo />
       <LampDemo />
+      <Footer />
     
      
    
-      <Footer />
+    
     </main>
 
   );

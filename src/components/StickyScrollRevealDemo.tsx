@@ -48,8 +48,8 @@ const content = [
 
 export function StickyScrollRevealDemo() {
   return (
-    <div className="p-10">
-      <p className="text-4xl sm:text-6xl lg:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-12 text-center">
+    <div className="p-10 mt-8">
+      <p className="text-4xl sm:text-6xl lg:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-12 text-center ">
         About me
       </p>
       <StickyScroll content={content} />
