@@ -87,7 +87,7 @@ const projects = [
     badge: "React, Flask, Kaggle",
     image:
       "https://res.cloudinary.com/dqm8rxpzq/image/upload/v1726409994/Screenshot_2024-09-15_194840_o3n1hz.png",
-    link: "https://your-text-sentiment-analysis-website.com",
+  
   },
   {
     title: "LeetCode and Codeforces Tracker",
@@ -103,7 +103,7 @@ const projects = [
     badge: "React, Web Scraping, Codeforces API",
     image:
       "https://res.cloudinary.com/dqm8rxpzq/image/upload/v1726430960/Screenshot_2024-09-16_013751_ayccnb.png",
-    link: "https://your-leetcode-codeforces-tracker.com",
+    link: "https://github.com/am1475/codeforces-tracker",
   },
   {
     title: "Weather Dashboard",
