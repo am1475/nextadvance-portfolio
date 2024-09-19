@@ -39,10 +39,10 @@ export function HeroHighlightDemo() {
                 >
                   <div className="flex justify-center">
                     <motion.img
-                      src="https://res.cloudinary.com/dqm8rxpzq/image/upload/v1726428690/WhatsApp_Image_2024-09-16_at_00.59.20_c2732884_dm73av.jpg"
+                      src="https://res.cloudinary.com/dqm8rxpzq/image/upload/v1726757398/WhatsApp_Image_2024-09-19_at_20.19.18_3694164d_pkgm0b.jpg"
                       alt="Amartya Paul"
                       className="rounded-lg shadow-lg"
-                      style={{ width: "100%", height: "auto" }} 
+                      style={{ width: "300px", height: "auto" }} 
                       initial={{ scale: 0.9 }}
                       animate={{ scale: 1 }}
                       transition={{ duration: 0.6, ease: "easeInOut" }}
